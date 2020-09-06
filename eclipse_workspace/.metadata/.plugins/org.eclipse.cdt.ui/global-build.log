@@ -1,0 +1,1522 @@
+12:09:05 **** Clean-only build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" clean 
+make: *** No rule to make target 'clean'.  Stop.
+12:09:06 **** Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Building file: C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.d" -MT"libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp"  -o  "libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o"   -Wall
+In file included from C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:35:0:
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h: In constructor 'Adafruit_NeoPixel::Adafruit_NeoPixel(uint16_t, uint8_t, neoPixelType)':
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:169:5: warning: 'Adafruit_NeoPixel::endTime' will be initialized after [-Wreorder]
+     endTime;       // Latch timing reference
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:155:5: warning:   'boolean Adafruit_NeoPixel::begun' [-Wreorder]
+     begun;         // true if begin() previously called
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:38:1: warning:   when initialized here [-Wreorder]
+ Adafruit_NeoPixel::Adafruit_NeoPixel(uint16_t n, uint8_t p, neoPixelType t) :
+ ^
+In file included from C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:35:0:
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h: In constructor 'Adafruit_NeoPixel::Adafruit_NeoPixel()':
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:169:5: warning: 'Adafruit_NeoPixel::endTime' will be initialized after [-Wreorder]
+     endTime;       // Latch timing reference
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:155:5: warning:   'boolean Adafruit_NeoPixel::begun' [-Wreorder]
+     begun;         // true if begin() previously called
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:51:1: warning:   when initialized here [-Wreorder]
+ Adafruit_NeoPixel::Adafruit_NeoPixel() :
+ ^
+In file included from C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:35:0:
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:167:5: warning: 'Adafruit_NeoPixel::wOffset' will be initialized after [-Wreorder]
+     wOffset;       // Index of white byte (same as rOffset if no white)
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:153:5: warning:   'boolean Adafruit_NeoPixel::is800KHz' [-Wreorder]
+     is800KHz,      // ...true if 800 KHz pixels
+     ^
+C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:51:1: warning:   when initialized here [-Wreorder]
+ Adafruit_NeoPixel::Adafruit_NeoPixel() :
+ ^
+'Finished building: C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp'
+' '
+'Building file: C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/esp8266.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"libraries/Adafruit_NeoPixel/esp8266.c.d" -MT"libraries/Adafruit_NeoPixel/esp8266.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/esp8266.c"  -o  "libraries/Adafruit_NeoPixel/esp8266.c.o"   -Wall
+'Finished building: C:/dataP/ws_git/arduino-projects/libraries/Adafruit_NeoPixel/esp8266.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/CDC.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/CDC.cpp.d" -MT"core/CDC.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/CDC.cpp"  -o  "core/CDC.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/CDC.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/HardwareSerial.cpp.d" -MT"core/HardwareSerial.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial.cpp"  -o  "core/HardwareSerial.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial0.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/HardwareSerial0.cpp.d" -MT"core/HardwareSerial0.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial0.cpp"  -o  "core/HardwareSerial0.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial0.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial1.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/HardwareSerial1.cpp.d" -MT"core/HardwareSerial1.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial1.cpp"  -o  "core/HardwareSerial1.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial1.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial2.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/HardwareSerial2.cpp.d" -MT"core/HardwareSerial2.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial2.cpp"  -o  "core/HardwareSerial2.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial2.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial3.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/HardwareSerial3.cpp.d" -MT"core/HardwareSerial3.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial3.cpp"  -o  "core/HardwareSerial3.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/HardwareSerial3.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/IPAddress.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/IPAddress.cpp.d" -MT"core/IPAddress.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/IPAddress.cpp"  -o  "core/IPAddress.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/IPAddress.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/PluggableUSB.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/PluggableUSB.cpp.d" -MT"core/PluggableUSB.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/PluggableUSB.cpp"  -o  "core/PluggableUSB.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/PluggableUSB.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Print.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/Print.cpp.d" -MT"core/Print.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Print.cpp"  -o  "core/Print.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Print.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Stream.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/Stream.cpp.d" -MT"core/Stream.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Stream.cpp"  -o  "core/Stream.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Stream.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Tone.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/Tone.cpp.d" -MT"core/Tone.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Tone.cpp"  -o  "core/Tone.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/Tone.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/USBCore.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/USBCore.cpp.d" -MT"core/USBCore.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/USBCore.cpp"  -o  "core/USBCore.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/USBCore.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WInterrupts.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/WInterrupts.c.d" -MT"core/WInterrupts.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WInterrupts.c"  -o  "core/WInterrupts.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WInterrupts.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WMath.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/WMath.cpp.d" -MT"core/WMath.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WMath.cpp"  -o  "core/WMath.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WMath.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WString.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/WString.cpp.d" -MT"core/WString.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WString.cpp"  -o  "core/WString.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/WString.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/abi.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/abi.cpp.d" -MT"core/abi.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/abi.cpp"  -o  "core/abi.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/abi.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/hooks.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/hooks.c.d" -MT"core/hooks.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/hooks.c"  -o  "core/hooks.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/hooks.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/main.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/main.cpp.d" -MT"core/main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/main.cpp"  -o  "core/main.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/main.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/new.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/new.cpp.d" -MT"core/new.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/new.cpp"  -o  "core/new.cpp.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/new.cpp'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/wiring.c.d" -MT"core/wiring.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring.c"  -o  "core/wiring.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_analog.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/wiring_analog.c.d" -MT"core/wiring_analog.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_analog.c"  -o  "core/wiring_analog.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_analog.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_digital.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/wiring_digital.c.d" -MT"core/wiring_digital.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_digital.c"  -o  "core/wiring_digital.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_digital.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.S'
+'Starting S compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -x assembler-with-cpp -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -MMD -MP -MF"core/wiring_pulse.S.d" -MT"core/wiring_pulse.S.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.S"  -o  "core/wiring_pulse.S.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.S'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/wiring_pulse.c.d" -MT"core/wiring_pulse.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.c"  -o  "core/wiring_pulse.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_pulse.c'
+' '
+'Building file: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_shift.c'
+'Starting C compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -c -g -Os -std=gnu11 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"core/wiring_shift.c.d" -MT"core/wiring_shift.c.o" -D__IN_ECLIPSE__=1 "C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_shift.c"  -o  "core/wiring_shift.c.o"   -Wall
+'Finished building: C:/dataP/Tools/Eclipse/eclipseArduino/arduinoPlugin/packages/arduino/hardware/avr/1.6.9/cores/arduino/wiring_shift.c'
+' '
+'Starting archiver'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-ar" rcs  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/arduino.ar"    arduino.ar  ./core/CDC.cpp.o ./core/HardwareSerial.cpp.o ./core/HardwareSerial0.cpp.o ./core/HardwareSerial1.cpp.o ./core/HardwareSerial2.cpp.o ./core/HardwareSerial3.cpp.o ./core/IPAddress.cpp.o ./core/PluggableUSB.cpp.o ./core/Print.cpp.o ./core/Stream.cpp.o ./core/Tone.cpp.o ./core/USBCore.cpp.o ./core/WInterrupts.c.o ./core/WMath.cpp.o ./core/WString.cpp.o ./core/abi.cpp.o ./core/hooks.c.o ./core/main.cpp.o ./core/new.cpp.o ./core/wiring.c.o ./core/wiring_analog.c.o ./core/wiring_digital.c.o ./core/wiring_pulse.S.o ./core/wiring_pulse.c.o ./core/wiring_shift.c.o 
+'Finished building: arduino.ar'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4742         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17532         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53146
+
+
+'Finished building target: EpoxyLight'
+' '
+12:10:09 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3762         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52150
+
+
+'Finished building target: EpoxyLight'
+' '
+12:10:43 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4008         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52396
+
+
+'Finished building target: EpoxyLight'
+' '
+12:11:45 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4008         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52396
+
+
+'Finished building target: EpoxyLight'
+' '
+12:12:04 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3762         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52150
+
+
+'Finished building target: EpoxyLight'
+' '
+12:13:35 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3726         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17526         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52124
+
+
+'Finished building target: EpoxyLight'
+' '
+12:16:00 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4070         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52458
+
+
+'Finished building target: EpoxyLight'
+' '
+12:22:01 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4070         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52458
+
+
+'Finished building target: EpoxyLight'
+' '
+12:23:35 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3726         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17526         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52124
+
+
+'Finished building target: EpoxyLight'
+' '
+12:23:56 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3726         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17526         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52124
+
+
+'Finished building target: EpoxyLight'
+' '
+12:25:24 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3758         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17527         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52157
+
+
+'Finished building target: EpoxyLight'
+' '
+12:26:45 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3762         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52150
+
+
+'Finished building target: EpoxyLight'
+' '
+12:27:09 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3762         0
+.bss                78   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17516         0
+.debug_abbrev     3891         0
+.debug_line       5819         0
+.debug_frame      2468         0
+.debug_str        4552         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52150
+
+
+'Finished building target: EpoxyLight'
+' '
+12:45:05 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3860         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17739         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52553
+
+
+'Finished building target: EpoxyLight'
+' '
+12:55:57 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3862         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17739         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52555
+
+
+'Finished building target: EpoxyLight'
+' '
+12:56:18 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             3864         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17739         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52557
+
+
+'Finished building target: EpoxyLight'
+' '
+13:09:46 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             5044         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17787         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53785
+
+
+'Finished building target: EpoxyLight'
+' '
+13:10:09 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             5044         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17787         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53785
+
+
+'Finished building target: EpoxyLight'
+' '
+13:11:13 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             5140         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17787         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53881
+
+
+'Finished building target: EpoxyLight'
+' '
+13:12:56 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4168         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17739         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52861
+
+
+'Finished building target: EpoxyLight'
+' '
+13:13:27 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i == lauflichtStep || i == strip.numPixels() / 2 + lauflichtStep) {
+                                                           ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4168         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17739         0
+.debug_abbrev     3895         0
+.debug_line       5826         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52861
+
+
+'Finished building target: EpoxyLight'
+' '
+13:15:04 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../EpoxyLight.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF"EpoxyLight.cpp.d" -MT"EpoxyLight.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../EpoxyLight.cpp"  -o  "EpoxyLight.cpp.o"   -Wall
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheel(int)':
+../EpoxyLight.cpp:39:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelColorful(int)':
+../EpoxyLight.cpp:49:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelRed(int)':
+../EpoxyLight.cpp:61:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawWheelBlue(int)':
+../EpoxyLight.cpp:85:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strip.numPixels(); i++) {
+                                      ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawLauflichtRandomColor(int)':
+../EpoxyLight.cpp:106:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:110:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeled(int)':
+../EpoxyLight.cpp:149:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels()) {
+                                        ^
+../EpoxyLight.cpp:155:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawBarGraphWheeledColorfull(int)':
+../EpoxyLight.cpp:176:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:177:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (i <= lauflichtStep || i >= strip.numPixels() - lauflichtStep) {
+                                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegment(int, int)':
+../EpoxyLight.cpp:252:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawRandomSegmentUSA(int, int)':
+../EpoxyLight.cpp:280:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:283:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp: In member function 'void EpoxyLight::drawDoubleLauflichtWheeled(int)':
+../EpoxyLight.cpp:304:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (lauflichtStep == strip.numPixels() / 2) {
+                                            ^
+../EpoxyLight.cpp:308:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < strip.numPixels(); i++) {
+                                       ^
+../EpoxyLight.cpp:310:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      || i == strip.numPixels() /4 + lauflichtStep //
+                                     ^
+../EpoxyLight.cpp:311:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      || i == strip.numPixels() / 2 + lauflichtStep //
+                                      ^
+../EpoxyLight.cpp:312:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      || i == strip.numPixels() /4*3 + lauflichtStep //
+                                       ^
+'Finished building: ../EpoxyLight.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4234         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17789         0
+.debug_abbrev     3895         0
+.debug_line       5825         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            52976
+
+
+'Finished building target: EpoxyLight'
+' '
+13:15:57 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building file: ../.ino.cpp'
+'Starting C++ compile'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+'Finished building: ../.ino.cpp'
+' '
+'Starting combiner'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
+'Finished building: EpoxyLight.elf'
+' '
+'Create eeprom image'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
+'Finished building: EpoxyLight.eep'
+' '
+'Create Flash image (ihex format)'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
+'Finished building: EpoxyLight.hex'
+' '
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4378         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17822         0
+.debug_abbrev     3895         0
+.debug_line       5825         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53153
+
+
+'Finished building target: EpoxyLight'
+' '

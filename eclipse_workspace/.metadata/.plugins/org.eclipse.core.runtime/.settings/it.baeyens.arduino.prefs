@@ -1,0 +1,11 @@
+714=1
+Automatically\ import\ libraries=true
+Board=Arduino Nano
+Board\ Custom\ Option\ Selections=Processor\=ATmega328
+Build\ before\ upload\ option=YES
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=C\:/Users/User/Arduino/libraries;
+Private\ hardware\ Path=C\:/Users/User/Arduino/hardware;
+boards\ file=C\:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\packages\\arduino\\hardware\\avr\\1.6.9\\boards.txt
+eclipse.preferences.version=1
+upload\ Port=COM4

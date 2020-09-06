@@ -1,0 +1,155 @@
+!SESSION 2020-09-06 11:59:11.088 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective it.baeyens.arduino.application.perspective
+
+!ENTRY it.baeyens.arduino.common 4 0 2020-09-06 11:59:23.636
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.common [435]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.common"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-09-06 11:59:23.651
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.core [437]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.core"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.monitor 4 0 2020-09-06 11:59:23.651
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.monitor [438]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.monitor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.cdt.refactor 4 0 2020-09-06 11:59:23.667
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.cdt.refactor [439]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.cdt.refactor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-06 12:05:55.247
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\User'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2020-09-06 12:05:56.660
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2020-09-06 12:05:56.660
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-09-06 12:08:33.501
+!MESSAGE Indexed 'EpoxyLight' (29 sources, 82 headers) in 1,75 sec: 3.535 declarations; 8.739 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-09-06 12:08:41.995
+!MESSAGE The folder C:\Users\User\Arduino\hardware' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 1 0 2020-09-06 12:08:41.995
+!MESSAGE The folder ' does not contain any files.
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-09-06 13:10:08.112
+!MESSAGE Serial port COM4 not found. Did you select the right one from the project properties -> Arduino -> Arduino?
+!STACK 0
+jssc.SerialPortException: Port name - COM4; Method name - openPort(); Exception type - Port not found.
+	at jssc.SerialPort.openPort(SerialPort.java:167)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:177)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:168)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:134)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:114)
+	at it.baeyens.arduino.communication.ArduinoSerial.makeArduinoUploadready(ArduinoSerial.java:230)
+	at it.baeyens.arduino.tools.uploaders.arduinoUploader.uploadUsingPreferences(arduinoUploader.java:54)
+	at it.baeyens.arduino.tools.uploaders.UploadSketchWrapper$UploadJobWrapper.run(UploadSketchWrapper.java:164)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY it.baeyens.arduino.core 2 0 2020-09-06 13:10:08.112
+!MESSAGE Unable to open Serial port COM4
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-09-06 13:10:19.477
+!MESSAGE Serial port COM4 already in use. Try quiting any programs that may be using it
+!STACK 0
+jssc.SerialPortException: Port name - COM4; Method name - openPort(); Exception type - Port busy.
+	at jssc.SerialPort.openPort(SerialPort.java:164)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:177)
+	at it.baeyens.arduino.arduino.Serial.connect(Serial.java:168)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:134)
+	at it.baeyens.arduino.arduino.Serial.<init>(Serial.java:114)
+	at it.baeyens.arduino.communication.ArduinoSerial.makeArduinoUploadready(ArduinoSerial.java:230)
+	at it.baeyens.arduino.tools.uploaders.arduinoUploader.uploadUsingPreferences(arduinoUploader.java:54)
+	at it.baeyens.arduino.tools.uploaders.UploadSketchWrapper$UploadJobWrapper.run(UploadSketchWrapper.java:164)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY it.baeyens.arduino.core 2 0 2020-09-06 13:10:19.477
+!MESSAGE Unable to open Serial port COM4
