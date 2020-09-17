@@ -1,4 +1,4 @@
-13:15:57 **** Incremental Build of configuration Release for project EpoxyLight ****
+17:01:26 **** Incremental Build of configuration Release for project EpoxyLight ****
 "C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
 'Building file: ../.ino.cpp'
 'Starting C++ compile'
@@ -40,5 +40,5 @@ Total            53153
 'Finished building target: EpoxyLight'
 ' '
 
-13:15:58 Build Finished (took 985ms)
+17:01:28 Build Finished (took 1s.667ms)
 

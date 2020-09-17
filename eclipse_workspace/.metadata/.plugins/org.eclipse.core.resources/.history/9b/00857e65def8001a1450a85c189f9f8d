@@ -1,0 +1,161 @@
+#include <Adafruit_NeoPixel.h>
+#include "EpoxyLight.h"
+#include <Bounce2.h>
+
+
+#define MODE_BUTTON_PIN 4
+#define SPEED_BUTTON_PIN 3
+
+#include <RotaryEncoder.h>
+
+// Setup a RoraryEncoder for pins A2 and A3:
+RotaryEncoder encoder(A2, A3);
+
+#define ROTARYSTEPS 1
+#define ROTARYMIN 1
+#define ROTARYMAX 17
+
+
+
+// Parameter 1 = number of pixels in strip,  neopixel stick has 8
+// Parameter 2 = pin number (most are valid)
+// Parameter 3 = pixel type flags, add together as needed:
+//   NEO_RGB     Pixels are wired for RGB bitstream
+//   NEO_GRB     Pixels are wired for GRB bitstream, correct for neopixel stick
+//   NEO_KHZ400  400 KHz bitstream (e.g. FLORA pixels)
+//   NEO_KHZ800  800 KHz bitstream (e.g. High Density LED strip), correct for neopixel stick
+Adafruit_NeoPixel stripD6 = Adafruit_NeoPixel(31, 6, NEO_GRB + NEO_KHZ800);
+EpoxyLight ringD6(stripD6);
+
+Bounce modeButton = Bounce();
+Bounce speedButton = Bounce();
+
+int modus = 0;
+int speed = 5;
+int millies = 0;
+int deltaMillies = 5;
+
+void setup() {
+	  Serial.begin(57600);
+	  Serial.println("SimplePollRotator example for the RotaryEncoder library.");
+
+	  encoder.setPosition(5 / ROTARYSTEPS); // start with the value of 10.
+
+	millies = 0;
+
+	// Setup the first button with an internal pull-up :
+	// Button schließt gegen Masse
+	pinMode(MODE_BUTTON_PIN, INPUT_PULLUP);
+	modeButton.attach(MODE_BUTTON_PIN);
+	modeButton.interval(5); // interval in ms
+
+	pinMode(SPEED_BUTTON_PIN, INPUT_PULLUP);
+	speedButton.attach(SPEED_BUTTON_PIN);
+	speedButton.interval(5); // interval in ms
+
+
+
+	ringD6.setup();
+}
+
+void loop() {
+	millies = millies + deltaMillies;
+	if (millies >= 5000)
+		millies = 0;
+
+	modeButton.update();
+	if (modeButton.fell() == true) {
+		incrementMode();
+	}
+
+	  // get the current physical position and calc the logical position
+	encoder.tick();
+	int newPos = encoder.getPosition() * ROTARYSTEPS;
+	    Serial.println(newPos);
+
+	  if (newPos < ROTARYMIN) {
+	    encoder.setPosition(ROTARYMIN / ROTARYSTEPS);
+	    newPos = ROTARYMIN;
+
+	  } else if (newPos > ROTARYMAX) {
+	    encoder.setPosition(ROTARYMAX / ROTARYSTEPS);
+	    newPos = ROTARYMAX;
+	  } // if
+
+	  if (lastPos != newPos) {
+	    Serial.println(newPos);
+	    lastPos = newPos;
+	  } // if
+
+
+
+    if (speed <1)
+    	speed = 1;
+
+    if (speed > 16)
+    	speed = 16;
+
+
+	speedButton.update();
+	if (speedButton.fell() == true) {
+		incrementSpeed();
+	}
+	drawEpoxyLight();
+	delay(deltaMillies);
+}
+
+void incrementMode() {
+	modus++;
+	ringD6.init();
+	if (modus > 9) {
+		modus = 0;
+	}
+}
+
+void incrementSpeed() {
+	speed++;
+	if (speed > 20) {
+		speed = 1;
+	}
+}
+
+
+
+void drawEpoxyLight() {
+	switch (modus) {
+	default:
+	case 0:
+		ringD6.drawPoliceLight(millies, 5*speed);
+		break;
+	case 1:
+		ringD6.drawWheelColorful(millies, 256, 16, 10*speed);
+		break;
+	case 2:
+		ringD6.drawTrippleLauflichtWheeled(millies, 10*speed);
+		break;
+	case 3:
+		ringD6.drawLauflichtBuildingUp(millies, 10*speed, 32);
+		break;
+	case 4:
+		ringD6.drawWheel(millies, 1, 50*speed);
+		break;
+	case 5:
+		ringD6.drawLauflichtRandomColor(millies, 10*speed);
+		break;
+	case 6:
+		ringD6.drawRandomSegment(millies, 20*speed, 16);
+		break;
+	case 7:
+		ringD6.drawRandomSegmentV2(millies, 20*speed, 16);
+		break;
+	case 8:
+		ringD6.drawRandomSegmentV3(millies, 20*speed);
+		break;
+	case 9:
+		ringD6.drawTrippleLauflichtWheeledTronLight(millies, 5*speed, 2);
+		break;
+	}
+}
+
+
+

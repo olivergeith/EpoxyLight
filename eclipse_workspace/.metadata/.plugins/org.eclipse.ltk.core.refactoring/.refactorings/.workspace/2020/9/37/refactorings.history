@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;EpoxyLight/EpoxyLightZahnrad.ino&apos;" deleteContents="false" description="Delete resource &apos;EpoxyLight/EpoxyLightZahnrad.ino&apos;" element1="/EpoxyLight/EpoxyLightZahnrad.ino" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1599741947213"/>
+</session>

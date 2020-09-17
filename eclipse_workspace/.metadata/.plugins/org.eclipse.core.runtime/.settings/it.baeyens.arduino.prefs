@@ -1,11 +1,18 @@
-714=1
+714=10
 Automatically\ import\ libraries=true
 Board=Arduino Nano
-Board\ Custom\ Option\ Selections=Processor\=ATmega328
+Board\ Custom\ Option\ Selections=Flash Mode\=\nFlash Frequency\=\nProcessor\=ATmega328\nCPU Frequency\=\nPSRAM\=\nFlash Size\=\nPartition Scheme\=\nLoRaWan Debug Level\=\nCore Debug Level\=\nUpload Speed\=\nLoRaWan Region\=
 Build\ before\ upload\ option=YES
+FmStatus=3
+FuStatub=124
+FuStatus=102
 Open\ serial\ connections\ with\ the\ monitor=true
-Private\ Library\ Path=C\:/Users/User/Arduino/libraries;
+Private\ Library\ Path=C\:\\dataP\\ws_git\\arduino-projects\\libraries;C\:/Users/User/Arduino/libraries;
 Private\ hardware\ Path=C\:/Users/User/Arduino/hardware;
+Serial\ Monitor\ Last\ Used\ Line\ Ending\ index=0
+Serial\ Monitor\ Last\ Used\ auto\ scroll\ setting=true
+Serial\ monitor\ last\ selected\ Port=COM4
+Serial\ monitor\ last\ selected\ rate=57600
 boards\ file=C\:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\packages\\arduino\\hardware\\avr\\1.6.9\\boards.txt
 eclipse.preferences.version=1
 upload\ Port=COM4

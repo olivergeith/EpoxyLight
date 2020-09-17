@@ -1,0 +1,17 @@
+/*
+ * Rotary.h
+ *
+ *  Created on: 17.09.2020
+ *      Author: Oliver
+ */
+
+#ifndef ROTARY_H_
+#define ROTARY_H_
+
+class Rotary {
+public:
+	Rotary();
+	virtual ~Rotary();
+};
+
+#endif /* ROTARY_H_ */
