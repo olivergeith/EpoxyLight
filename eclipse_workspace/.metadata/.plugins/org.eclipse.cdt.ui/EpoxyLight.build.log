@@ -1,22 +1,5 @@
-17:01:26 **** Incremental Build of configuration Release for project EpoxyLight ****
+10:30:36 **** Incremental Build of configuration Release for project EpoxyLight ****
 "C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
-'Building file: ../.ino.cpp'
-'Starting C++ compile'
-"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\cores\arduino" -I"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.9\variants\eightanaloginputs" -I"C:\dataP\ws_git\arduino-projects\libraries\Adafruit_NeoPixel" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
-'Finished building: ../.ino.cpp'
-' '
-'Starting combiner'
-"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections -mmcu=atmega328p  -o "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"    ./.ino.cpp.o ./EpoxyLight.cpp.o  ./libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp.o ./libraries/Adafruit_NeoPixel/esp8266.c.o   arduino.ar     "-LC:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release" -lm
-'Finished building: EpoxyLight.elf'
-' '
-'Create eeprom image'
-"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.eep"
-'Finished building: EpoxyLight.eep'
-' '
-'Create Flash image (ihex format)'
-"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf" "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.hex"
-'Finished building: EpoxyLight.hex'
-' '
 'Building target: EpoxyLight'
 'Printing size:'
 "C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
@@ -40,5 +23,5 @@ Total            53153
 'Finished building target: EpoxyLight'
 ' '
 
-17:01:28 Build Finished (took 1s.667ms)
+10:30:37 Build Finished (took 895ms)
 

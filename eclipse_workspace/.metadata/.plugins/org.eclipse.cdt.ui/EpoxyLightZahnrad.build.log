@@ -1,4 +1,4 @@
-14:25:56 **** Incremental Build of configuration Release for project EpoxyLightZahnrad ****
+10:30:37 **** Incremental Build of configuration Release for project EpoxyLightZahnrad ****
 "C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
 'Building target: EpoxyLightZahnrad'
 'Printing size:'
@@ -23,5 +23,5 @@ Total            161220
 'Finished building target: EpoxyLightZahnrad'
 ' '
 
-14:25:56 Build Finished (took 568ms)
+10:30:38 Build Finished (took 637ms)
 

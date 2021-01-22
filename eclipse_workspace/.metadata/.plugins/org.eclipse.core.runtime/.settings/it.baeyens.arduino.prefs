@@ -1,9 +1,9 @@
-714=10
+714=12
 Automatically\ import\ libraries=true
 Board=Arduino Nano
 Board\ Custom\ Option\ Selections=Flash Mode\=\nFlash Frequency\=\nProcessor\=ATmega328\nCPU Frequency\=\nPSRAM\=\nFlash Size\=\nPartition Scheme\=\nLoRaWan Debug Level\=\nCore Debug Level\=\nUpload Speed\=\nLoRaWan Region\=
 Build\ before\ upload\ option=YES
-FmStatus=3
+FmStatus=5
 FuStatub=124
 FuStatus=102
 Open\ serial\ connections\ with\ the\ monitor=true

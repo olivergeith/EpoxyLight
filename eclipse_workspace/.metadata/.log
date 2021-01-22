@@ -1449,3 +1449,248 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 !SUBENTRY 2 org.eclipse.core.resources 4 274 2020-09-17 17:01:28.946
 !MESSAGE Resource is out of sync with the file system: '/EpoxyLightZahnrad/.settings/language.settings.xml'.
+!SESSION 2020-09-18 07:04:52.526 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective it.baeyens.arduino.application.perspective
+
+!ENTRY it.baeyens.arduino.common 4 0 2020-09-18 07:05:07.021
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.common [435]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.common"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-09-18 07:05:07.029
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.core [437]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.core"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.monitor 4 0 2020-09-18 07:05:07.034
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.monitor [438]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.monitor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.cdt.refactor 4 0 2020-09-18 07:05:07.039
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.cdt.refactor [439]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.cdt.refactor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-18 07:05:19.360
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\User'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2020-09-18 07:05:20.886
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2020-09-18 07:05:20.894
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+!SESSION 2020-10-23 10:29:54.123 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -perspective it.baeyens.arduino.application.perspective
+
+!ENTRY it.baeyens.arduino.common 4 0 2020-10-23 10:30:06.454
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.common [435]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.common"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.core 4 0 2020-10-23 10:30:06.461
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.core [437]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.core"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.arduino.monitor 4 0 2020-10-23 10:30:06.466
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.arduino.monitor [438]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.arduino.monitor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY it.baeyens.cdt.refactor 4 0 2020-10-23 10:30:06.470
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: it.baeyens.cdt.refactor [439]
+  Another singleton bundle selected: osgi.identity; osgi.identity="it.baeyens.cdt.refactor"; type="osgi.bundle"; version:Version="3.0.0.201602070209"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-23 10:30:33.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\User'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2020-10-23 10:30:35.079
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2020-10-23 10:30:35.091
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.ui 4 0 2020-10-23 10:30:36.092
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element EpoxyLight.cpp does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2020-10-23 10:30:36.094
+!MESSAGE Element EpoxyLight.cpp does not exist.
