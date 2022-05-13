@@ -1,4 +1,4 @@
-10:30:36 **** Incremental Build of configuration Release for project EpoxyLight ****
+12:40:09 **** Incremental Build of configuration Release for project EpoxyLight ****
 "C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
 'Building target: EpoxyLight'
 'Printing size:'
@@ -23,5 +23,5 @@ Total            53153
 'Finished building target: EpoxyLight'
 ' '
 
-10:30:37 Build Finished (took 895ms)
+12:40:10 Build Finished (took 955ms)
 

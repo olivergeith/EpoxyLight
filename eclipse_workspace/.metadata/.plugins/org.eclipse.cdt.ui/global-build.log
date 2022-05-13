@@ -1706,3 +1706,51 @@ Total            161220
 
 'Finished building target: EpoxyLightZahnrad'
 ' '
+12:40:09 **** Incremental Build of configuration Release for project EpoxyLight ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building target: EpoxyLight'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLight/Release/EpoxyLight.elf  :
+section           size      addr
+.data               20   8388864
+.text             4378         0
+.bss               141   8388884
+.comment            17         0
+.debug_aranges     792         0
+.debug_info      17822         0
+.debug_abbrev     3895         0
+.debug_line       5825         0
+.debug_frame      2468         0
+.debug_str        4560         0
+.debug_loc       12419         0
+.debug_ranges      816         0
+Total            53153
+
+
+'Finished building target: EpoxyLight'
+' '
+12:40:11 **** Incremental Build of configuration Release for project EpoxyLightZahnrad ****
+"C:\\dataP\\Tools\\Eclipse\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+'Building target: EpoxyLightZahnrad'
+'Printing size:'
+"C:\dataP\Tools\Eclipse\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLightZahnrad/Release/EpoxyLightZahnrad.elf"
+C:/dataP/ws_git/EpoxyLight/Arduino/EpoxyLightZahnrad/Release/EpoxyLightZahnrad.elf  :
+section            size      addr
+.data               152   8388864
+.text             10614         0
+.bss                477   8389016
+.comment             17         0
+.debug_aranges     1968         0
+.debug_info       65656         0
+.debug_abbrev     11954         0
+.debug_line       14841         0
+.debug_frame       6116         0
+.debug_str        14544         0
+.debug_loc        32873         0
+.debug_ranges      2008         0
+Total            161220
+
+
+'Finished building target: EpoxyLightZahnrad'
+' '
